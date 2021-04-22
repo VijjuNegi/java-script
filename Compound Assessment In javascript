@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Compound Assessment In Javascript</title>
+</head>
+<body>
+<h1>Explanation</h1>
+<p>Here I initialized some variables with `let` keyword so that their scope in the program becomes global and the values can be changed anywhere in the program. </p>
+<p>The same thing can be done with `var` as well. <strong>Confused?</strong> Don't Be.</p>
+<p>Then I created some div with id's "addition","subtraction","multiplication","division"</p>
+<p>All of the above mentioned div(s) had five children that each had a class "title","first","second","third","break" respectively</p>
+<ul>
+    <li>The <strong>title</strong> will be used for displaying title of the current compound assessment</li>
+    <li>The <strong>first</strong> will be used to display the calculation done on first variable</li>
+    <li>The <strong>second</strong> will be used to display the calculation done on second variable</li>
+    <li>The <strong>third</strong> will be used to display the calculation done on third variable</li>
+    <li>The <strong>break</strong> will be used as a seperator for each assessment as currenlty we are not using any CSS by the time of writing.</li>
+</ul>
+<h2>Inside the <strong>script</strong> tag</h2>
+<p>I used three variables "first","second","third" which we will perform the calculations</p>
+<p>
+    <span>After the calculation, I used</span>
+    <span>
+        <a href="https://developer.mozilla.org/en-US/docs/Web/API/Document/querySelector" target="_blank">
+            <strong>document.querySelector</strong>
+        </a>
+    </span>
+    <span>which is used to select elements on the basis of the selector passed as the parameter.</span>
+</p>
+<p>
+    <span>In simple words if I want to select <strong>h2 tag</strong> I will use <code>document.querySelector("h2")</code></span>
+    <span>Since I wanted to select all the classes "title","first","second","third" within their parent "addition","subtraction","multiplication","division", I used <code>document.querySelector("#addition .title")</code></span>
+</p>
+<p>
+    <span><strong>Where</strong>, <code>#</code> represents "id" of the tag</span>
+    <span>and <code>.</code> the class of each tag</span>
+</p>
+<h3>The <code>innerHTML</code> property</h3>
+<p><a href="https://developer.mozilla.org/en-US/docs/Web/API/Element/innerHTML" target="_blank">Link</a></p>
+<p>This property is used to insert the passed string into the selector used.</p>
+<p>This property can be used for both getting and setting the markup of the HTML tag</p>
+<div class="break">------------------</div>
+<div id="addition">
+    <div class="title"></div>
+    <div class="first"></div>
+    <div class="second"></div>
+    <div class="third"></div>
+    <div class="break">------------------</div>
+</div>
+
+<div id="subtraction">
+    <div class="title"></div>
+    <div class="first"></div>
+    <div class="second"></div>
+    <div class="third"></div>
+    <div class="break">------------------</div>
+</div>
+<div id="multiplication">
+    <div class="title"></div>
+    <div class="first"></div>
+    <div class="second"></div>
+    <div class="third"></div>
+    <div class="break">------------------</div>
+</div>
+<div id="division">
+    <div class="title"></div>
+    <div class="first"></div>
+    <div class="second"></div>
+    <div class="third"></div>
+    <div class="break">------------------</div>
+</div>
+</body>
+<script>
+    //Compound Assignment With Augmented Addition
+    let first = 3;
+    let second = 17;
+    let third = 12;
+    // A equal = 15 , B equal =26 , C equal = 19;
+    first += 12;
+    second += 9;
+    third += 7;
+    document.querySelector('#addition .title').innerHTML = `Compound Assignment With Augmented Addition`
+    document.querySelector('#addition .first').innerHTML = `first should equal 15 = ${first}`
+    document.querySelector('#addition .second').innerHTML = `second should equal 26 = ${second}`
+    document.querySelector('#addition .third').innerHTML = `third should equal 19 = ${third}`
+
+    // Compound Assignment With Augmented Subtraction
+    first = 11
+    second = 9
+    third = 3
+
+    // A equal = 5 , B equal = -6 , C equal = 2;
+    first -= 6
+    second -= 15
+    third -= 1
+
+    document.querySelector('#subtraction .title').innerHTML = `Compound Assignment With Augmented Subtraction`
+    document.querySelector('#subtraction .first').innerHTML = `first should equal 5 = ${first}`
+    document.querySelector('#subtraction .second').innerHTML = `second should equal -6 = ${second}`
+    document.querySelector('#subtraction .third').innerHTML = `third should equal 2 = ${third}`
+
+    // Compound Assignment With Augmented Multiplication
+    first = 5
+    second = 12
+    third = 4.6
+
+    // A equal = 25 , B equal = 36 , C equal = 46;
+    first *= 5
+    second *= 3
+    third *= 10
+    document.querySelector('#multiplication .title').innerHTML = `Compound Assignment With Augmented Multiplication`
+    document.querySelector('#multiplication .first').innerHTML = `a should equal 25 = ${first}`
+    document.querySelector('#multiplication .second').innerHTML = `b should equal 36 = ${second}`
+    document.querySelector('#multiplication .third').innerHTML = `c should equal 46 = ${third}`
+
+    // Compound Assignment With Augmented Division
+    first = 48
+    second = 108
+    third = 33
+
+
+    // A equal = 4 , B equal = 27 , C equal = 3;
+    first /= 12
+    second /= 4
+    third /= 11
+    document.querySelector('#division .title').innerHTML = `Compound Assignment With Augmented Division`
+    document.querySelector('#division .first').innerHTML = `a should equal 4 = ${first}`
+    document.querySelector('#division .second').innerHTML = `b should equal 27 = ${second}`
+    document.querySelector('#division .third').innerHTML = `c should equal 4 = ${third}`
+</script>
+</html>
