@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    function myFunction() {
+  document.write("Hello java script");
+}
+myFunction()
+document.write("<br><br>");
+
+// Passing Values to Functions with Arguments
+function functionWithArgs(a, b){
+  document.write(a + b);
+}
+functionWithArgs(1 , 2);
+document.write("<br><br>");
+
+//Assignment with a Returned Value
+var processed = 0;
+function processArg(num) {
+  return (num + 3) / 5;
+}
+processed = processArg(7);
+document.write(processed +"<br><br>");
+
+//Comparison with the Equality Operator
+function testEqual(val) {
+  if (val == 12) { 
+    return "Equal";
+  }
+  return "Not Equal";
+}
+testEqual(12);
+
+
+
+//Comparison with the Strict Equality OperatorPassed
+function testStrict(val) {
+  if (val === 7) { 
+    return "Equal";
+  }
+  return "Not Equal";
+}
+
+testStrict('7');
+
+//Practice comparing different values
+function compareEquality(a, b) {
+  if (a === b) { 
+    return "Equal";
+  }
+  return "Not Equal";
+}
+
+compareEquality(10, "10");
+
+
+//Comparison with the Inequality Operator
+function testNotEqual(val) {
+  if (val != 99) { 
+    return "Not Equal";
+  }
+  return "Equal";
+}
+
+testNotEqual(99);
+    </script>
+</body>
+</html>

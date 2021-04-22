@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+   <script>
+   //Store Multiple Values in one Variable using JavaScript Arrays
+
+var myArray =["Rahul", "Rishi", "Negi", 22];
+document.write(myArray + "<br><br>");
+
+// Access Array Data with IndexesPassed
+var myArray = ["Rahul", "Rishi", "Negi", 22]
+var myData = myArray[2];
+document.write(myData + "<br><br>");
+
+// Modify Array Data With IndexesPassed
+var myArray = [18,64,99];
+myArray[0] = 45;
+document.write(myArray + "<br><br>");
+
+//Access Multi-Dimensional Arrays With Indexes
+// myData should be equal to 8.
+var myArray = [[1,2,3], [4,5,6], [7,8,9], [[10,11,12], 13, 14]];
+var myData = myArray[2][1];
+document.write(myData + "<br><br>");
+
+//Manipulate Arrays With push()
+var myArray = [["John", 23], ["cat", 2]];
+myArray.push(["dog", 3])
+document.write(myArray + "<br><br>");
+
+// Manipulate Arrays With pop()
+var myArray = [["Rishi", 23], ["Rahul", 2]];
+var removedFromMyArray = myArray.pop([1]);
+document.write(removedFromMyArray + "<br><br>");
+
+
+// Manipulate Arrays With shift()
+var myArray = [["Aman", 23], ["Vipin", 3]];
+var removedFromMyArray = myArray.shift([0]);
+document.write(removedFromMyArray + "<br><br>");
+
+//Manipulate Arrays With unshift()
+var myArray = [["John", 23], ["Rahul", 3]];
+myArray.shift([0]);
+myArray.unshift(["Paul", 35]);
+document.write(myArray + "<br><br>");
+
+
+// array and sub-arrays.
+var myList = [["vijju", 25],["shiv", 25],["rahul", 22],
+["vikas", 24],["rishi", 21]];
+document.write(myList + "<br><br>");
+
+   </script>
+</body>
+</html>
