@@ -63,11 +63,9 @@ function freezeObj() {
   const MATH_CONSTANTS = {
     PI: 3.14
   };
-  // Only change code below this line
+  
 Object.freeze(MATH_CONSTANTS);
-
-  // Only change code above this line
-  try {
+try {
     MATH_CONSTANTS.PI = 99;
   } catch(ex) {
     console.log(ex);
@@ -216,7 +214,6 @@ const createPerson = (name, age, gender) => {
 const bicycle = {
   gear: 2,
   setGear(newGear) {
-    "use strict";
     this.gear = newGear;
   }
 };
@@ -304,6 +301,36 @@ stringFunctions.lowercaseString("WORLD!");
 export default function subtract(x, y) {
   return x - y;
 }
+
+
+
+ //Import a Default Export
+ import subtract from "./math_functions.js";
+
+subtract(7,4);
+
+
+
+//Create a JavaScript Promise
+const makeServerRequest = new Promise((resolve, reject) => {
+
+});
+
+
+
+
+//Complete a Promise with resolve and reject
+
+const makeServerRequest = new Promise((resolve, reject) => {
+  
+ let responseFromServer;
+
+  if(responseFromServer) {
+    resolve("We got the data");
+  } else {	
+    reject("Data not received");
+  }
+});
     </script>
 </body>
 </html>
