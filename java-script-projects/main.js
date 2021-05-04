@@ -48,3 +48,13 @@ console.log(elementForms);
 // document doctype
 let elementDoctype = document.doctype;
 console.log(elementDoctype);
+
+
+// document URL
+let elementUrl = document.URL;
+console.log(elementUrl);
+
+
+// document domain
+let elementDomain = document.domain;
+console.log(elementDomain);
