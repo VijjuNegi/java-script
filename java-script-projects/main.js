@@ -18,3 +18,8 @@ console.log(elementHead);
 // document title
 let elementTitle = document.title;
 console.log(elementTitle);
+
+
+// document body
+let elementBody = document.body;
+console.log(elementBody);
