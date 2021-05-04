@@ -13,3 +13,8 @@ console.log(elementAll);
 // document head
 let elementHead = document.head;
 console.log(elementHead);
+
+
+// document title
+let elementTitle = document.title;
+console.log(elementTitle);
