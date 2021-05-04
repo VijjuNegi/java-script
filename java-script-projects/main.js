@@ -38,3 +38,8 @@ console.log(elementAnchors);
 // document links
 let elementLinks = document.links;
 console.log(elementLinks);
+
+
+// document forms
+let elementForms = document.forms;
+console.log(elementForms);
