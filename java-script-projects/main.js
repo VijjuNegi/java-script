@@ -23,3 +23,8 @@ console.log(elementTitle);
 // document body
 let elementBody = document.body;
 console.log(elementBody);
+
+
+// document images
+let elementImages = document.images;
+console.log(elementImages);
