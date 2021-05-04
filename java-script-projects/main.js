@@ -43,3 +43,8 @@ console.log(elementLinks);
 // document forms
 let elementForms = document.forms;
 console.log(elementForms);
+
+
+// document doctype
+let elementDoctype = document.doctype;
+console.log(elementDoctype);
