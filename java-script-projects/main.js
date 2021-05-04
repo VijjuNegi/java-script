@@ -33,3 +33,8 @@ console.log(elementImages);
 // document anchors
 let elementAnchors = document.anchors;
 console.log(elementAnchors);
+
+
+// document links
+let elementLinks = document.links;
+console.log(elementLinks);
