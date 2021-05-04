@@ -28,3 +28,8 @@ console.log(elementBody);
 // document images
 let elementImages = document.images;
 console.log(elementImages);
+
+
+// document anchors
+let elementAnchors = document.anchors;
+console.log(elementAnchors);
