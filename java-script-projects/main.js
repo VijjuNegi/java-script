@@ -8,3 +8,8 @@ console.log(element);
 // document All
 let elementAll = document.all;
 console.log(elementAll);
+
+
+// document head
+let elementHead = document.head;
+console.log(elementHead);
