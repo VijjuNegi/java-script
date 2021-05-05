@@ -109,3 +109,12 @@ console.log(elementAttributeNode);
 //get by Attributes
 let elementAttributes = document.getElementById("banner").attributes[2].value;
 console.log(elementAttributes);
+
+
+
+// DOM Set Methods
+
+// Set InnerText
+document.getElementsByTagName("h2")[0].innerText = "Landing pages";
+let elementSetInnerText = document.getElementsByTagName("h2")[0].innerText;
+console.log(elementSetInnerText);
