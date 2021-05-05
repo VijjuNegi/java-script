@@ -86,3 +86,8 @@ console.log(elementTagName);
 // get by innerText
 let elementInnerText = document.getElementById("banner").innerText;
 console.log(elementInnerText);
+
+
+// get by innerHTML
+let elementInnerHTML = document.getElementById("banner").innerHTML;
+console.log(elementInnerHTML);
