@@ -58,3 +58,70 @@ console.log(elementUrl);
 // document domain
 let elementDomain = document.domain;
 console.log(elementDomain);
+
+
+// Target DOM 
+
+// By Id Target
+let elementId = document.getElementById("banner");
+console.log(elementId);
+
+
+
+// By Class Target
+let elementClass = document.getElementsByClassName("slidingBox");
+console.log(elementClass);
+
+
+
+// By TagName Target
+let elementTagName = document.getElementsByTagName("h2");
+console.log(elementTagName);
+
+
+
+// DOM get methods
+
+
+// get by innerText
+let elementInnerText = document.getElementById("banner").innerText;
+console.log(elementInnerText);
+
+
+// get by innerHTML
+let elementInnerHTML = document.getElementById("banner").innerHTML;
+console.log(elementInnerHTML);
+
+
+
+//get by Attribute
+let elementAttribute = document.getElementById("banner").getAttribute("style");
+console.log(elementAttribute);
+
+
+
+//get by AttributeNode
+let elementAttributeNode = document.getElementById("banner").getAttributeNode("style");
+console.log(elementAttributeNode);
+
+
+
+//get by Attributes
+let elementAttributes = document.getElementById("banner").attributes[2].value;
+console.log(elementAttributes);
+
+
+
+// DOM Set Methods 
+
+// Set InnerText
+document.getElementsByTagName("h2")[0].innerText = "Landing pages";
+let elementSetInnerText = document.getElementsByTagName("h2")[0].innerText;
+console.log(elementSetInnerText);
+
+
+
+// Set Inner HTML
+document.getElementsByTagName("h2")[0].innerHTML = "<h1>Landing pages</h1>";
+let elementSetInnerHTML = document.getElementsByTagName("h2")[0].innerHTML;
+console.log(elementSetInnerHTML);
