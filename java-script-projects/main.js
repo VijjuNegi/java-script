@@ -71,3 +71,9 @@ console.log(elementId);
 // By Class Target
 let elementClass = document.getElementsByClassName("slidingBox");
 console.log(elementClass);
+
+
+
+// By TagName Target
+let elementTagName = document.getElementsByTagName("h2");
+console.log(elementTagName);
