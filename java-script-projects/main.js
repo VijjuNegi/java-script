@@ -112,7 +112,7 @@ console.log(elementAttributes);
 
 
 
-// DOM Set Methods
+// DOM Set Methods 
 
 // Set InnerText
 document.getElementsByTagName("h2")[0].innerText = "Landing pages";
