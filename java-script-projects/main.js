@@ -77,3 +77,12 @@ console.log(elementClass);
 // By TagName Target
 let elementTagName = document.getElementsByTagName("h2");
 console.log(elementTagName);
+
+
+
+// DOM get methods
+
+
+// get by innerText
+let elementInnerText = document.getElementById("banner").innerText;
+console.log(elementInnerText);
