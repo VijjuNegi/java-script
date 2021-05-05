@@ -118,3 +118,10 @@ console.log(elementAttributes);
 document.getElementsByTagName("h2")[0].innerText = "Landing pages";
 let elementSetInnerText = document.getElementsByTagName("h2")[0].innerText;
 console.log(elementSetInnerText);
+
+
+
+// Set Inner HTML
+document.getElementsByTagName("h2")[0].innerHTML = "<h1>Landing pages</h1>";
+let elementSetInnerHTML = document.getElementsByTagName("h2")[0].innerHTML;
+console.log(elementSetInnerHTML);
