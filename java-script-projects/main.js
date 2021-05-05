@@ -58,3 +58,10 @@ console.log(elementUrl);
 // document domain
 let elementDomain = document.domain;
 console.log(elementDomain);
+
+
+// Target DOM 
+
+// By Id Target
+let elementId = document.getElementById("banner");
+console.log(elementId);
