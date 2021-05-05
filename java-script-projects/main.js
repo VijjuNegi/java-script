@@ -65,3 +65,9 @@ console.log(elementDomain);
 // By Id Target
 let elementId = document.getElementById("banner");
 console.log(elementId);
+
+
+
+// By Class Target
+let elementClass = document.getElementsByClassName("slidingBox");
+console.log(elementClass);
