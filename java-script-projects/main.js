@@ -91,3 +91,9 @@ console.log(elementInnerText);
 // get by innerHTML
 let elementInnerHTML = document.getElementById("banner").innerHTML;
 console.log(elementInnerHTML);
+
+
+
+//get by Attribute
+let elementAttribute = document.getElementById("banner").getAttribute("style");
+console.log(elementAttribute);
