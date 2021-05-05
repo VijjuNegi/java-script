@@ -103,3 +103,9 @@ console.log(elementAttribute);
 //get by AttributeNode
 let elementAttributeNode = document.getElementById("banner").getAttributeNode("style");
 console.log(elementAttributeNode);
+
+
+
+//get by Attributes
+let elementAttributes = document.getElementById("banner").attributes[2].value;
+console.log(elementAttributes);
