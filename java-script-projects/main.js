@@ -169,3 +169,12 @@ console.log(elementQuerySelectorAll);
 
 let paragraphQuerySelectorAll = document.querySelectorAll("p")[1].innerText;
 console.log(paragraphQuerySelectorAll);
+
+
+
+
+// Dom CSS Styling Methods get "style"
+
+// get "style"
+let getStyle = document.querySelector("#footer").style.color;
+console.log(getStyle);
