@@ -184,3 +184,11 @@ console.log(getStyle);
 // value set of css
 document.querySelector("#footer").style.backgroundColor = "red";
 document.querySelector("#footer").style.fontSize = "25px";
+
+
+
+// set of class Name
+
+document.querySelector("#footer").className = "bgColor anyClass";
+let setClassName = document.querySelector("#footer").className;
+console.log(setClassName);
