@@ -125,3 +125,10 @@ console.log(elementSetInnerText);
 document.getElementsByTagName("h2")[0].innerHTML = "<h1>Landing pages</h1>";
 let elementSetInnerHTML = document.getElementsByTagName("h2")[0].innerHTML;
 console.log(elementSetInnerHTML);
+
+
+
+// Set Attribute
+document.getElementById("banner").setAttribute("class","abcColor");
+let elementsetAttribute = document.getElementById("banner").getAttribute("class");
+console.log(elementsetAttribute);
