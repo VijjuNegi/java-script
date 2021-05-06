@@ -125,3 +125,77 @@ console.log(elementSetInnerText);
 document.getElementsByTagName("h2")[0].innerHTML = "<h1>Landing pages</h1>";
 let elementSetInnerHTML = document.getElementsByTagName("h2")[0].innerHTML;
 console.log(elementSetInnerHTML);
+
+
+
+// Set Attribute
+document.getElementById("banner").setAttribute("class","abcColor");
+let elementsetAttribute = document.getElementById("banner").getAttribute("class");
+console.log(elementsetAttribute);
+
+
+
+// Attributes
+let elementSetAttributes = document.getElementById("banner").attributes.value = "abcColor";
+console.log(elementSetAttributes);
+
+
+
+// removeAttribute
+document.getElementById("banner").removeAttribute("style");
+
+
+
+
+
+// New Dom Targeting Methods  
+
+// Target QuerySelector #ID
+let elementQuerySelector = document.querySelector("#banner h2").innerText = "Java Srcipt";
+console.log(elementQuerySelector);
+
+
+
+// Target QuerySelector .CLASS
+let elementQuerySelectorClass = document.querySelector(".slidingBox");
+console.log(elementQuerySelectorClass);
+
+
+
+// Target QuerySelectorAll #Id, .Class, TagName, 
+let elementQuerySelectorAll = document.querySelectorAll(".slidingBox")[1].innerHTML;
+console.log(elementQuerySelectorAll);
+
+
+let paragraphQuerySelectorAll = document.querySelectorAll("p")[1].innerText;
+console.log(paragraphQuerySelectorAll);
+
+
+
+
+// Dom CSS Styling Methods
+
+// get "style"
+let getStyle = document.querySelector("#footer").style.color;
+console.log(getStyle);
+
+
+
+// value set of css
+document.querySelector("#footer").style.backgroundColor = "red";
+document.querySelector("#footer").style.fontSize = "25px";
+
+
+
+// set of class Name
+
+document.querySelector("#footer").className = "bgColor anyClass";
+let setClassName = document.querySelector("#footer").className;
+console.log(setClassName);
+
+
+
+// set of class list => two methods add and remove
+document.querySelector("#footer").classList;
+let setClassList = document.querySelector("#footer").classList;
+console.log(setClassList);
