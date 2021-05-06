@@ -148,9 +148,14 @@ document.getElementById("banner").removeAttribute("style");
 
 
 
-// New Dom Targeting Methods  Target QuerySelector #ID
-
+// New Dom Targeting Methods  
 
 // Target QuerySelector #ID
 let elementQuerySelector = document.querySelector("#banner h2").innerText = "Java Srcipt";
 console.log(elementQuerySelector);
+
+
+
+// Target QuerySelector .CLASS
+let elementQuerySelectorClass = document.querySelector(".slidingBox");
+console.log(elementQuerySelectorClass);
