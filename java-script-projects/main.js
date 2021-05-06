@@ -159,3 +159,13 @@ console.log(elementQuerySelector);
 // Target QuerySelector .CLASS
 let elementQuerySelectorClass = document.querySelector(".slidingBox");
 console.log(elementQuerySelectorClass);
+
+
+
+// Target QuerySelectorAll #Id, .Class, TagName, 
+let elementQuerySelectorAll = document.querySelectorAll(".slidingBox")[1].innerHTML;
+console.log(elementQuerySelectorAll);
+
+
+let paragraphQuerySelectorAll = document.querySelectorAll("p")[1].innerText;
+console.log(paragraphQuerySelectorAll);
