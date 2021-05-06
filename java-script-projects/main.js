@@ -138,3 +138,8 @@ console.log(elementsetAttribute);
 // Attributes
 let elementSetAttributes = document.getElementById("banner").attributes.value = "abcColor";
 console.log(elementSetAttributes);
+
+
+
+// removeAttribute
+document.getElementById("banner").removeAttribute("style");
