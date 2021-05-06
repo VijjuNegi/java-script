@@ -192,3 +192,10 @@ document.querySelector("#footer").style.fontSize = "25px";
 document.querySelector("#footer").className = "bgColor anyClass";
 let setClassName = document.querySelector("#footer").className;
 console.log(setClassName);
+
+
+
+// set of class list => two methods add and remove
+document.querySelector("#footer").classList;
+let setClassList = document.querySelector("#footer").classList;
+console.log(setClassList);
