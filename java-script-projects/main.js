@@ -132,3 +132,9 @@ console.log(elementSetInnerHTML);
 document.getElementById("banner").setAttribute("class","abcColor");
 let elementsetAttribute = document.getElementById("banner").getAttribute("class");
 console.log(elementsetAttribute);
+
+
+
+// Attributes
+let elementSetAttributes = document.getElementById("banner").attributes.value = "abcColor";
+console.log(elementSetAttributes);
