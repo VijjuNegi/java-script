@@ -143,3 +143,14 @@ console.log(elementSetAttributes);
 
 // removeAttribute
 document.getElementById("banner").removeAttribute("style");
+
+
+
+
+
+// New Dom Targeting Methods  Target QuerySelector #ID
+
+
+// Target QuerySelector #ID
+let elementQuerySelector = document.querySelector("#banner h2").innerText = "Java Srcipt";
+console.log(elementQuerySelector);
