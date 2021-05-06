@@ -173,8 +173,14 @@ console.log(paragraphQuerySelectorAll);
 
 
 
-// Dom CSS Styling Methods get "style"
+// Dom CSS Styling Methods
 
 // get "style"
 let getStyle = document.querySelector("#footer").style.color;
 console.log(getStyle);
+
+
+
+// value set of css
+document.querySelector("#footer").style.backgroundColor = "red";
+document.querySelector("#footer").style.fontSize = "25px";
