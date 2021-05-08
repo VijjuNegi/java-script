@@ -125,6 +125,15 @@
         let resultChewie = chewieQuote.match(chewieRegex);
         console.log(resultChewie);
 
+
+
+
+        // Find Characters with Lazy Matching
+        let text = "<h1>Winter is coming</h1>";
+        let myRegexLazy = /<.*?>/;
+        let resultLazy = text.match(myRegexLazy);
+        console.log(resultLazy);
+
     </script>
 </body>
 
