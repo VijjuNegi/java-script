@@ -98,6 +98,15 @@
         let resultNumbers = quoteNumbers.match(myRegexNumbers);
         console.log(resultNumbers);
 
+
+
+
+        // Match Single Characters Not Specified
+        let quoteSingle = "3 blind mice.";
+        let regex = /[^aeiou^0-9]/gi;
+        let resultOne = quoteSingle.match(regex);
+        console.log(resultOne);
+
     </script>
 </body>
 
