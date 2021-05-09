@@ -188,6 +188,97 @@
 
 
 
+        // Match All Non-Numbers
+        let movieNames = "2001: A Space Odyssey";
+        let noNumRegex = /\D/g;
+        let resultNonNumbers = movieNames.match(noNumRegex).length;
+        console.log(resultNonNumbers);
+
+
+
+
+        // Restrict Possible Usernames
+        let username = "JackOfAllTrades";
+        let userCheck = /^[a-z][a-z]+\d*$|^[a-z]\d\d+$/i;
+        let resultUsernames = userCheck.test(username);
+        console.log(resultUsernames);
+
+
+
+
+        // Match Whitespace
+        let sampleWhitespace = "Whitespace is important in separating words";
+        let countWhiteSpace = /\s/g;
+        let resultWhitespaces = sampleWhitespace.match(countWhiteSpace);
+        console.log(resultWhitespaces);
+
+
+
+
+        // Match Non-Whitespace Characters
+        let sampleNonWhitespace = "Whitespace is important in separating words";
+        let countNonWhiteSpace = /\S/g;
+        let resultNonWhitespaces = sampleNonWhitespace.match(countNonWhiteSpace);
+        console.log(resultNonWhitespaces);
+
+
+
+
+        // Specify Upper and Lower Number of Matches
+        let ohStr = "Ohhh no";
+        let ohRegex = /oh{3,6}\sno/gi;
+        let resultUpperLower = ohRegex.test(ohStr);
+        console.log(resultUpperLower);
+
+
+
+
+        // Specify Only the Lower Number of Matches
+        let haStr = "Hazzzzah";
+        let haRegex = /Haz{4,}ah/;
+        let resultLower = haRegex.test(haStr);
+        console.log(resultLower);
+
+
+
+
+        // Specify Exact Number of Matches
+        let timStr = "Timmmmber";
+        let timRegex = /Tim{4}ber/;
+        let resultExact = timRegex.test(timStr);
+        console.log(resultExact);
+
+
+
+
+        // Check for All or None
+        let favWord = "favorite";
+        let favRegex = /favou?rite/;
+        let resultAllorNone = favRegex.test(favWord);
+        console.log(resultAllorNone);
+
+
+
+
+        // Positive and Negative Lookahead
+        let sampleWord = "astronaut";
+        let pwRegex = /(?=\w{6})(?=\w*\d{2})/;
+        let resultLookahead = pwRegex.test(sampleWord);
+        console.log(resultLookahead);
+
+
+
+
+
+        // Check For Mixed Grouping of Characters
+        let myGroup = "Eleanor Roosevelt";
+        let myGroups = /(Franklin|Eleanor).*Roosevelt/;
+        let resultMixed = myGroups.test(myGroup);
+        console.log(resultMixed);
+
+
+
+
 
 
 
