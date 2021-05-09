@@ -197,6 +197,15 @@
 
 
 
+        // Restrict Possible Usernames
+        let username = "JackOfAllTrades";
+        let userCheck = /^[a-z][a-z]+\d*$|^[a-z]\d\d+$/i;
+        let resultUsernames = userCheck.test(username);
+        console.log(resultUsernames);
+
+
+
+
 
 
 
