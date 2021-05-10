@@ -280,6 +280,36 @@
 
 
 
+        // Reuse Patterns Using Capture Groups
+        let repeatNum = "40 40 40";
+        let reRegex = /^(\d+)\s\1\s\1$/;
+        let resultReuse = reRegex.test(repeatNum);
+        console.log(resultReuse);
+
+
+
+
+        // Use Capture Groups to Search and Replace
+        let str = "one two three";
+        let fixRegex = /(\w+)\s(\w+)\s(\w+)/;
+        let replaceText = "$3 $2 $1";
+        let resultSearch = str.replace(fixRegex, replaceText);
+        console.log(resultSearch);
+
+
+
+
+
+        // Remove Whitespace from Start and End
+        let hello = "   Hello, World!  ";
+        let wsRegex = /^\s+|\s+$/g;
+        let resultRemove = hello.replace(wsRegex, "");
+        console.log(resultRemove);
+
+
+
+
+
 
 
 
