@@ -280,6 +280,16 @@
 
 
 
+        // Reuse Patterns Using Capture Groups
+        let repeatNum = "40 40 40";
+        let reRegex = /^(\d+)\s\1\s\1$/;
+        let resultReuse = reRegex.test(repeatNum);
+        console.log(resultReuse);
+
+
+
+
+
 
 
 
