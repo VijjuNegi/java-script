@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+
+
+
+        //Use an Array to Store a Collection of Data
+        let yourArray = ["Rahul", 5, true, 6, null];
+        console.log(yourArray);
+
+
+
+
+        // Access an Array's Contents Using Bracket Notation
+        let myArray = ["a", "b", "c", "d"];
+        myArray[1] = "hello";
+        console.log(myArray);
+
+
+
+
+
+        // Add Items to an Array with push() and unshift()
+        function mixedNumbers(arr) {
+            arr.unshift("I", 2, "three");
+            arr.push(7, "VIII", 9);
+            return arr;
+        }
+
+        console.log(mixedNumbers(["IV", 5, "six"]));
+
+
+
+
+
+        // Remove Items from an Array with pop() and shift()
+        function popShift(arr) {
+            let popped = arr.pop();
+            let shifted = arr.shift();
+            return [shifted, popped];
+        }
+
+        console.log(popShift(['challenge', 'is', 'not', 'complete']));
+
+
+
+
+
+        // Remove Items Using splice()
+        const arr = [2, 4, 5, 1, 7, 5, 2, 1];
+        arr.splice(1, 4)
+
+        console.log(arr);
+
+
+
+    </script>
+</body>
+
+</html>
