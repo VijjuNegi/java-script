@@ -1,23 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Basic Algorithm Scripting</title>
 </head>
+
 <body>
     <script>
-    
-    // Convert Celsius to Fahrenheit
-    function convertToF(celsius) {
+
+        // Convert Celsius to Fahrenheit
+        function convertToF(celsius) {
             let fahrenheit = celsius * (9 / 5) + 32;
             return fahrenheit;
         }
 
         console.log(convertToF(30));
-    
-    
+
+
+
+
+
+        // Reverse a String
+        function reverseString(str) {
+            for (var reversedStr = "", i = str.length - 1; i >= 0; i--) {
+                reversedStr += str[i];
+            }
+            return reversedStr;
+        }
+        document.write(reverseString("Hello"));
+
+
     </script>
 </body>
+
 </html>
