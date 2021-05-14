@@ -159,6 +159,61 @@
 
 
 
+        // Title Case a Sentence
+        function titleCase(str) {
+            return str.toLowerCase().replace(/(^|\s)\S/g, M => M.toUpperCase());
+        }
+        console.log(titleCase("I'm a little tea pots"));
+
+
+
+
+
+        // Slice and Splice
+        function frankenSplice(arr1, arr2, n) {
+            let localArray = arr2.slice();
+            for (let i = 0; i < arr1.length; i++) {
+                localArray.splice(n, 0, arr1[i]);
+                n++;
+            }
+            return localArray;
+        }
+
+        console.log(frankenSplice([1, 2, 3], [4, 5, 6], 1));
+
+
+
+
+
+        // Falsy Bouncer
+        function bouncer(arr) {
+            return arr.filter(Boolean);
+        }
+
+        console.log(bouncer([7, "ate", "", false, 9]));
+
+
+
+
+
+        // Where do I Belong
+        function getIndexToIns(arr, num) {
+            arr.sort(function (a, b) {
+                return a - b;
+            });
+
+            for (var a = 0; a < arr.length; a++) {
+                if (arr[a] >= num) return a;
+            }
+
+            return arr.length;
+        }
+        console.log(getIndexToIns([40, 60], 50));
+
+
+
+
+
 
 
     </script>
