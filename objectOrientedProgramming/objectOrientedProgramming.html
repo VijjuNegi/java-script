@@ -36,15 +36,114 @@
 
 
         // Create a Method on an Object
-     let dog = {
-       name: "Spot",
-       numLegs: 4,
-      sayLegs: function(){
-        return "This dog has " + dog.numLegs +" legs."
-      }
-     };
-     
-     console.log(dog.sayLegs());
+        let dog = {
+            name: "Spot",
+            numLegs: 4,
+            sayLegs: function () {
+                return "This dog has " + dog.numLegs + " legs."
+            }
+        };
+
+        console.log(dog.sayLegs());
+
+
+
+
+
+
+        // Make Code More Reusable with the this Keyword
+        let dog = {
+            name: "Spot",
+            numLegs: 4,
+            sayLegs: function () { return "This dog has " + this.numLegs + " legs."; }
+        };
+
+        console.log(dog.sayLegs());
+
+
+
+
+        // Define a Constructor Function
+        function Bird() {
+            this.name = "Albert"
+            this.color = "White"
+            this.numLegs = 2;
+        }
+
+
+
+
+
+        // Use a Constructor to Create Objects
+        function Dog() {
+            this.name = "Rupert";
+            this.color = "brown";
+            this.numLegs = 4;
+        }
+
+        let hound = new Dog();
+        console.log(hound);
+
+
+
+
+
+        // Extend Constructors to Receive Arguments
+        function Dog(name, color) {
+            this.name = name;
+            this.color = color;
+            this.numLegs = 4;
+        }
+        let terrier = new Dog;
+        console.log(terrier);
+
+
+
+
+
+        // Verify an Object's Constructor with instanceof
+        function House(numBedrooms) {
+            this.numBedrooms = numBedrooms;
+        }
+
+        let myHouse = new House(6);
+        myHouse instanceof House;
+        console.log(myHouse);
+
+
+
+
+
+        // Understand Own Properties
+        function Bird(name) {
+            this.name = name;
+            this.numLegs = 2;
+        }
+
+        let canary = new Bird("Tweety");
+        let ownProps = [];
+        for (let property in canary) {
+            if (canary.hasOwnProperty(property)) {
+                ownProps.push(property);
+            }
+        }
+        console.log(ownProps);
+
+
+
+
+
+        // Use Prototype Properties to Reduce Duplicate Code
+        function Dog(name) {
+            this.name = name;
+        }
+
+        let beagle = new Dog("Snoopy");
+
+        Dog.prototype.numLegs = 2;
+        console.log(beagle);
+
+
 
     </script>
 </body>
