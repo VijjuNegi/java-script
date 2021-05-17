@@ -234,6 +234,18 @@
 
 
 
+        // Understand the Prototype Chain
+        function Dog(name) {
+            this.name = name;
+        }
+        let beagles = new Dog("Snoopy");
+
+        Dog.prototype.isPrototypeOf(beagles);
+        Object.prototype.isPrototypeOf(Dog.prototype);
+
+
+
+
     </script>
 </body>
 
