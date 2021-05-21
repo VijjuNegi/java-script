@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Calculator</title>
+    <link href="main.css" rel="stylesheet">
+</head>
+
+<body>
+
+
+    <div class="calculator">
+        <form name="form">
+            <div class=screen>
+                <input type ="text" name= "output" value=''>
+            </div>
+            <div class="input-area">
+                <input type="button" value="1" class="" onclick="calculator(this.value)">
+                <input type="button" value="2" class="" onclick="calculator(this.value)">
+                <input type="button" value="3" class="" onclick="calculator(this.value)">
+                <input type="button" value="C" class="" onclick="form.output.value = ''"><br><br>
+                <input type="button" value="4" class="" onclick="calculator(this.value)">
+                <input type="button" value="5" class="" onclick="calculator(this.value)">
+                <input type="button" value="6" class="" onclick="calculator(this.value)">
+                <input type="button" value="+" class="" onclick="calculator(this.value)"><br><br>
+                <input type="button" value="7" class="" onclick="calculator(this.value)">
+                <input type="button" value="8" class="" onclick="calculator(this.value)">
+                <input type="button" value="9" class="" onclick="calculator(this.value)">
+                <input type="button" value="-" class="" onclick="calculator(this.value)"><br><br>
+                <input type="button" value="/" class="" onclick="calculator(this.value)">
+                <input type="button" value="0" class="" onclick="calculator(this.value)">
+                <input type="button" value="*" class="" onclick="calculator(this.value)">
+                <input type="button" value="=" class="" onclick="form.output.value = eval(form.output.value)"><br><br>
+            </div>
+        </form>
+    </div>
+    <script src="main.js"></script>
+</body>
+
+</html>
