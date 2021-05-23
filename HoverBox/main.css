@@ -1,0 +1,14 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+.boxChange{
+    border: 2px solid red;
+    background-color: #1f1f1f;
+    color: #fff;
+}
+.boxChangeOne{
+    background: blue;
+    border: 1px solid #5f5f5f;
+    color: red;
+}
