@@ -109,6 +109,19 @@
 
 
 
+
+
+        // Pass Arguments to Avoid External Dependence in a Function
+        var fixedValue = 4;
+
+        function incrementer(value) {
+            return value + 1;
+        }
+        var differentValue = incrementer(fixedValue);
+        console.log(fixedValue);
+
+
+
     </script>
 </body>
 
