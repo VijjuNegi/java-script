@@ -408,6 +408,47 @@
         console.log(splitify("Hello World,I-am code"));
 
 
+
+
+        // Apply Functional Programming to Convert Strings to URL Slugs
+        function urlSlug(title) {
+
+            return title
+                .toLowerCase()
+                .trim()
+                .split(/\s+/)
+                .join("-");
+        }
+
+        console.log(urlSlug);
+
+
+
+
+        // Use the every Method to Check that Every Element in an Array Meets a Criteria
+        function checkPositive(arr) {
+
+            return arr.every(value => value > 0);
+        }
+        console.log(checkPositive([1, 2, 3, -4, 5]));
+
+
+
+
+        // Use the some Method to Check that Any Elements in an Array Meet a Criteria
+        function checkPositive(arr) {
+
+            return arr.some(function (val) {
+                return val > 0;
+            });
+
+        }
+        console.log(checkPositive([1, 2, 3, -4, 5]));
+
+
+
+
+
     </script>
 </body>
 
