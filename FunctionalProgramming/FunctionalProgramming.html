@@ -448,12 +448,24 @@
 
 
 
-
         // Introduction to Currying and Partial Application
         let add = x => y => z => {
             return x + y + z;
         }
         console.log(add(10)(20)(30));
+
+
+
+        // Sum All Numbers in a RangePassed
+        function sumAll(arr) {
+
+            let sum = 0;
+            for (let i = Math.min(...arr); i <= Math.max(...arr); i++) {
+                sum += i;
+            }
+            return sum;
+        }
+        console.log(sumAll([1, 4]));
 
 
 
