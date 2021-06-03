@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>IntermediateAlgorithmScript</title>
+</head>
+
+<body>
+    <script>
+
+        // Sum All Numbers in a RangePassed
+        function sumAll(arr) {
+
+            let sum = 0;
+            for (let i = Math.min(...arr); i <= Math.max(...arr); i++) {
+                sum += i;
+            }
+            return sum;
+        }
+        console.log(sumAll([1, 4]));
+
+
+
+
+
+        // Diff Two Arrays
+        function diffArray(arr1, arr2) {
+            var newArr = [];
+
+            function onlyInFirst(first, second) {
+                for (var i = 0; i < first.length; i++) {
+                    if (second.indexOf(first[i]) === -1) {
+                        newArr.push(first[i]);
+                    }
+                }
+            }
+
+            onlyInFirst(arr1, arr2);
+            onlyInFirst(arr2, arr1);
+
+            return newArr;
+        }
+
+        diffArray([1, 2, 3, 5], [1, 2, 3, 4, 5]);
+
+    </script>
+</body>
+
+</html>
