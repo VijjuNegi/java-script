@@ -1,12 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>IntermediateAlgorithmScript</title>
 </head>
+
 <body>
-    
+    <script>
+
+        // Sum All Numbers in a RangePassed
+        function sumAll(arr) {
+
+            let sum = 0;
+            for (let i = Math.min(...arr); i <= Math.max(...arr); i++) {
+                sum += i;
+            }
+            return sum;
+        }
+        console.log(sumAll([1, 4]));
+
+    </script>
 </body>
+
 </html>
