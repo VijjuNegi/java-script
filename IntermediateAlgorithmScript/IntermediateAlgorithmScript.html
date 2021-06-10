@@ -291,7 +291,41 @@
         }
 
         smallestCommons([1, 5]);
-        smallestCommons([1, 5]);
+
+
+
+
+
+        // Drop it
+        function dropElements(arr, func) {
+            while (arr.length > 0 && !func(arr[0])) {
+                arr.shift();
+            }
+            return arr;
+        }
+        dropElements([1, 2, 3, 4], function (n) {
+            return n >= 3;
+        });
+        dropElements([1, 2, 3], function (n) { return n < 3; });
+
+
+
+
+
+        // Steamroller
+        function steamrollArray(arr) {
+            const flattenedArray = [];
+            for (let i = 0; i < arr.length; i++) {
+                if (Array.isArray(arr[i])) {
+                    flattenedArray.push(...steamrollArray(arr[i]));
+                } else {
+                    flattenedArray.push(arr[i]);
+                }
+            }
+            return flattenedArray;
+        };
+        steamrollArray([1, [2], [3, [[4]]]]);
+
 
 
 
